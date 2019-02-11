@@ -149,8 +149,8 @@ class Widget
         $widget = $this->getAsCanonicalArray($widget);
 
         // Save all nodes to object data
-        $object->setType($type);
         $object->setData($widget);
+        $object->setType($type);
 
         // Correct widget parameters and convert its data to objects
         $newParams = $this->prepareWidgetParameters($object);
